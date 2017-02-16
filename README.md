@@ -1,2 +1,2 @@
 # circuits
-Java-based digital circuit emulator
+Java-based boolean logic circuit emulator

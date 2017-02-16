@@ -21,7 +21,7 @@ public class BinaryComponent extends Component {
 	protected BitSet process(BitSet inputValues) {
 		HashMap mappings = this.getMappings();
 		BitSet outputValues = new BitSet();
-		outputValues.set(0, (boolean) mappings.get(inputValues));
+		outputValues.set(0, (boolean) mappings.get(inputValues.hashCode()));
 		return outputValues;
 	}
 

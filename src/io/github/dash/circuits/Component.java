@@ -20,10 +20,6 @@ public class Component {
 	// Construction
 	///
 
-	public Component() {
-		this(2, 1);
-	}
-
 	public Component(int inputCount, int outputCount) {
 		this(new ComponentType(inputCount, outputCount));
 	}
@@ -111,7 +107,7 @@ public class Component {
 		BitSet outputValues = new BitSet();
 
 		for(int outputIdx = 0; outputIdx < outputCount; outputIdx++) {
-			outputValues.set(outputIdx, 0);
+			outputValues.set(outputIdx, false);
 		}
 
 		return outputValues;
